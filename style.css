@@ -1,8 +1,6 @@
 body {
-  max-width: 650px;
-  margin: 40px auto;
+  margin: 10px auto 0px auto;
   padding: 0 10px;
-  color: #444;
   font-family: Sans-serif;
 }
 
@@ -27,4 +25,15 @@ a:visited {
 
 .important {
   color: red !important;
+}
+
+.listItem {
+  page-break-inside: avoid;
+  width: 95%;
+}
+
+#listContainer {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 25% 25% 25% 25%;
 }
