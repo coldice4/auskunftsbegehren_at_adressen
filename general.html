@@ -1,34 +1,30 @@
 <!DOCTYPE html>
             <html lang="de">
             <head>
-              <meta charset="utf-8">
-              <link rel="stylesheet" media="screen" href="mini-default.min.css">
-              <link rel="stylesheet" type="text/css" href="style.css">
-              <meta name="viewport" content="width=device-width, initial-scale=1">
-              <title>
-                Export
-              </title>
+                <meta charset="utf-8">
+                <link rel="stylesheet" media="screen" href="mini-default.min.css">
+                <link rel="stylesheet" type="text/css" href="style.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>
+                    Export
+                </title>
             </head>
             <body>
-              <header>
-                  <h1 class="center">
-                    Genereller Export
-                  </h1>
-                  <div id="buttonContainer" class="center screenOnly">
-                    <button class="btn" onclick="filterSelection('Bund')">Bund</button>
-                    <button class="btn" onclick="filterSelection('Burgenland')">Burgenland</button>
-                    <button class="btn" onclick="filterSelection('Kärnten')">Kärnten</button>
-                    <button class="btn" onclick="filterSelection('Niederösterreich')">Niederösterreich</button>
-                    <button class="btn" onclick="filterSelection('Oberösterreich')">Oberösterreich</button>
-                    <button class="btn" onclick="filterSelection('Salzburg')">Salzburg</button>
-                    <button class="btn" onclick="filterSelection('Steiermark')">Steiermark</button>
-                    <button class="btn" onclick="filterSelection('Tirol')">Tirol</button>
-                    <button class="btn" onclick="filterSelection('Vorarlberg')">Vorarlberg</button>
-                    <button class="btn" onclick="filterSelection('Wien')">Wien</button>
-                    <button class="btn" onclick="filterSelection('Privat')">Privat</button>
-                    </div>
+                <header class="sticky screenOnly">
+                    <!-- TODO: Das automatisch generieren -->
+                    <a href="?filter=Bund" role="button">Bund</a>
+                    <a href="?filter=Burgenland" role="button">Burgenland</a>
+                    <a href="?filter=Kärnten" role="button">Kärnten</a>
+                    <a href="?filter=Niederösterreich" role="button">Niederösterreich</a>
+                    <a href="?filter=Oberösterreich" role="button">Oberösterreich</a>
+                    <a href="?filter=Salzburg" role="button">Salzburg</a>
+                    <a href="?filter=Steiermark" role="button">Steiermark</a>
+                    <a href="?filter=Tirol" role="button">Tirol</a>
+                    <a href="?filter=Vorarlberg" role="button">Vorarlberg</a>
+                    <a href="?filter=Wien" role="button">Wien</a>
+                    <a href="?filter=Privat" role="button">Privat</a>
               </header>
-              <div id="mainContainer"><div class="administrationLevelContainer filter Bund"><h2 class="strong">Bund</h2><div class="typeContainer Bildung"><h3 class="strong">Bildung</h3><div class="itemContainer"><div class="listItem Bund"><h4>BIFIE</h4>
+              <div id="mainContainer"><div class="administrationLevelContainer filter" id="Bund"><h2 class="strong">Bund</h2><div class="typeContainer Bildung"><h3 class="strong">Bildung</h3><div class="itemContainer"><div class="listItem Bund"><h4>BIFIE</h4>
 <p><strong>Bundesinstitut für Bildungsforschung, Innovation & Entwicklung des österreichischen Schulwesens</strong></p>
 <p>Alpenstraße 121<br>
 5020 Salzburg</p>
@@ -1294,7 +1290,7 @@
 <p>Letzte Prüfung am: <em>22.08.2020</em></p>
 </div> <!-- List Item End -->
 
-</div><!-- end of Dorotheum itemContainer --></div><!-- end of Wirtschaftsförderung typeContainer --></div><!-- end of Bund administrationLevelContainer --><div class="administrationLevelContainer filter Burgenland"><h2 class="strong">Burgenland</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Burgenland"><h4>BH Eisenstadt-Umgebung</h4>
+</div><!-- end of Dorotheum itemContainer --></div><!-- end of Wirtschaftsförderung typeContainer --></div><!-- end of Bund administrationLevelContainer --><div class="administrationLevelContainer filter" id="Burgenland"><h2 class="strong">Burgenland</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Burgenland"><h4>BH Eisenstadt-Umgebung</h4>
 <p><strong>Bezirkshauptmannschaft Eisenstadt-Umgebung</strong></p>
 <p>Ing. Julius Raab-Straße 1<br>
 7000 Eisenstadt</p>
@@ -1511,7 +1507,7 @@
 <p>Letzte Prüfung am: <em>18.08.2020</em></p>
 </div> <!-- List Item End -->
 
-</div><!-- end of Ärztekammer Burgenland itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Burgenland administrationLevelContainer --><div class="administrationLevelContainer filter Kärnten"><h2 class="strong">Kärnten</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Kärnten"><h4>BH Feldkirchen</h4>
+</div><!-- end of Ärztekammer Burgenland itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Burgenland administrationLevelContainer --><div class="administrationLevelContainer filter" id="Kärnten"><h2 class="strong">Kärnten</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Kärnten"><h4>BH Feldkirchen</h4>
 <p><strong>Bezirkshauptmannschaft Feldkirchen</strong></p>
 <p>Milesistraße 10<br>
 9560 Feldkirchen in Kärnten</p>
@@ -1785,7 +1781,7 @@
 <p>Letzte Prüfung am: <em>18.08.2020</em></p>
 </div> <!-- List Item End -->
 
-</div><!-- end of Ärztekammer Kärnten itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Kärnten administrationLevelContainer --><div class="administrationLevelContainer filter Niederösterreich"><h2 class="strong">Niederösterreich</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Niederösterreich"><h4>BH Amstetten</h4>
+</div><!-- end of Ärztekammer Kärnten itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Kärnten administrationLevelContainer --><div class="administrationLevelContainer filter" id="Niederösterreich"><h2 class="strong">Niederösterreich</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Niederösterreich"><h4>BH Amstetten</h4>
 <p><strong>Bezirkshauptmannschaft Amstetten</strong></p>
 <p>Preinsbacher Straße 11<br>
 3300 Amstetten</p>
@@ -2264,7 +2260,7 @@
 <p>Letzte Prüfung am: <em>19.09.2020</em></p>
 </div> <!-- List Item End -->
 
-</div><!-- end of VP NÖ itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Niederösterreich administrationLevelContainer --><div class="administrationLevelContainer filter Oberösterreich"><h2 class="strong">Oberösterreich</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Oberösterreich"><h4>BH Braunau</h4>
+</div><!-- end of VP NÖ itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Niederösterreich administrationLevelContainer --><div class="administrationLevelContainer filter" id="Oberösterreich"><h2 class="strong">Oberösterreich</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Oberösterreich"><h4>BH Braunau</h4>
 <p><strong>Bezirkshauptmannschaft Braunau</strong></p>
 <p>Hammersteinplatz 1<br>
 5280 Braunau am Inn</p>
@@ -2665,7 +2661,7 @@
 <p>Letzte Prüfung am: <em>18.08.2020</em></p>
 </div> <!-- List Item End -->
 
-</div><!-- end of Ärztekammer Oberösterreich itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Oberösterreich administrationLevelContainer --><div class="administrationLevelContainer filter Privat"><h2 class="strong">Privat</h2><div class="typeContainer Auskunfteien"><h3 class="strong">Auskunfteien</h3><div class="itemContainer"><div class="listItem Privat"><h4>AKV</h4>
+</div><!-- end of Ärztekammer Oberösterreich itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Oberösterreich administrationLevelContainer --><div class="administrationLevelContainer filter" id="Privat"><h2 class="strong">Privat</h2><div class="typeContainer Auskunfteien"><h3 class="strong">Auskunfteien</h3><div class="itemContainer"><div class="listItem Privat"><h4>AKV</h4>
 <p><strong>AKV EUROPA – Alpenländischer Kreditorenverband</strong></p>
 <p>Schleifmühlgasse 2<br>
 1041 Wien Postfach</p>
@@ -4396,7 +4392,7 @@
 <p>Letzte Prüfung am: <em>24.08.2020</em></p>
 </div> <!-- List Item End -->
 
-</div><!-- end of ÖAMTC itemContainer --></div><!-- end of Verein typeContainer --></div><!-- end of Privat administrationLevelContainer --><div class="administrationLevelContainer filter Salzburg"><h2 class="strong">Salzburg</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Salzburg"><h4>BH Hallein</h4>
+</div><!-- end of ÖAMTC itemContainer --></div><!-- end of Verein typeContainer --></div><!-- end of Privat administrationLevelContainer --><div class="administrationLevelContainer filter" id="Salzburg"><h2 class="strong">Salzburg</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Salzburg"><h4>BH Hallein</h4>
 <p><strong>Bezirkshauptmannschaft Hallein</strong></p>
 <p>Schwarzstraße 14<br>
 5400 Hallein</p>
@@ -4651,7 +4647,7 @@
 <p>Letzte Prüfung am: <em>18.08.2020</em></p>
 </div> <!-- List Item End -->
 
-</div><!-- end of Ärztekammer Salzburg itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Salzburg administrationLevelContainer --><div class="administrationLevelContainer filter Steiermark"><h2 class="strong">Steiermark</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Steiermark"><h4>BH Bruck-Mürzzuschlag</h4>
+</div><!-- end of Ärztekammer Salzburg itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Salzburg administrationLevelContainer --><div class="administrationLevelContainer filter" id="Steiermark"><h2 class="strong">Steiermark</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Steiermark"><h4>BH Bruck-Mürzzuschlag</h4>
 <p><strong>Bezirkshauptmannschaft Bruck-Mürzzuschlag</strong></p>
 <p>Dr.-Theodor-Körner-Straße 34<br>
 8600 Bruck an der Mur</p>
@@ -5156,7 +5152,7 @@
 <p>Letzte Prüfung am: <em>18.08.2020</em></p>
 </div> <!-- List Item End -->
 
-</div><!-- end of Ärztekammer Steiermark itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Steiermark administrationLevelContainer --><div class="administrationLevelContainer filter Tirol"><h2 class="strong">Tirol</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Tirol"><h4>BH Imst</h4>
+</div><!-- end of Ärztekammer Steiermark itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Steiermark administrationLevelContainer --><div class="administrationLevelContainer filter" id="Tirol"><h2 class="strong">Tirol</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Tirol"><h4>BH Imst</h4>
 <p><strong>Bezirkshauptmannschaft Imst</strong></p>
 <p>Stadtplatz 1<br>
 6460 Imst</p>
@@ -5457,7 +5453,7 @@
 <p>Letzte Prüfung am: <em>18.08.2020</em></p>
 </div> <!-- List Item End -->
 
-</div><!-- end of Ärztekammer Tirol itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Tirol administrationLevelContainer --><div class="administrationLevelContainer filter Vorarlberg"><h2 class="strong">Vorarlberg</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Vorarlberg"><h4>BH Bludenz</h4>
+</div><!-- end of Ärztekammer Tirol itemContainer --></div><!-- end of Interessensvertretung typeContainer --></div><!-- end of Tirol administrationLevelContainer --><div class="administrationLevelContainer filter" id="Vorarlberg"><h2 class="strong">Vorarlberg</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Vorarlberg"><h4>BH Bludenz</h4>
 <p><strong>Bezirkshauptmannschaft Bludenz</strong></p>
 <p>Schloss-Gayenhofplatz 2<br>
 6700 Bludenz</p>
@@ -5646,7 +5642,7 @@
 <p>Letzte Prüfung am: <em>19.08.2020</em></p>
 </div> <!-- List Item End -->
 
-</div><!-- end of Amt der Vorarlberger Landesregierung itemContainer --></div><!-- end of Landesbehörde typeContainer --></div><!-- end of Vorarlberg administrationLevelContainer --><div class="administrationLevelContainer filter Wien"><h2 class="strong">Wien</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Wien"><h4>MBA für den 1., 8. Bezirk</h4>
+</div><!-- end of Amt der Vorarlberger Landesregierung itemContainer --></div><!-- end of Landesbehörde typeContainer --></div><!-- end of Vorarlberg administrationLevelContainer --><div class="administrationLevelContainer filter" id="Wien"><h2 class="strong">Wien</h2><div class="typeContainer Bezirksbehörde"><h3 class="strong">Bezirksbehörde</h3><div class="itemContainer"><div class="listItem Wien"><h4>MBA für den 1., 8. Bezirk</h4>
 <p><strong>Magistratisches Bezirksamt für den 1., 8. Bezirk</strong></p>
 <p>Wipplingerstraße 6-8<br>
 1010 Wien</p>
@@ -7618,6 +7614,7 @@
                     <a href="https://github.com/cyber-perikarp/auskunftsbegehren_at_adressen/issues/new" target="_blank" class="important">Neuen Datensatz einreichen</a>
                   </p>
                 </footer>
+                <script src="jquery-3.5.1.min.js"></script>
                 <script src="filter.js"></script>
             </body>
             </html>
